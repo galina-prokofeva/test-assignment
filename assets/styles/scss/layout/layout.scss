@@ -1,0 +1,34 @@
+/********************************************************************************************/
+/* Layout------------------------------------------*/
+/* тут храни стили основной сетки                                                           */
+/********************************************************************************************/
+// классы с префиксом layout-  ( .layout-%name% , layout-%name%-container{} )
+
+.layout-wrapper{
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.layout-header{
+  display: block;
+}
+.layout-main{
+  display: block;
+  font-size: 0;
+}
+
+.layout-sidebar{
+  display: block;
+}
+.layout-content{
+  display: block;
+}
+.layout-footer{
+  display: block;
+}
+
+.interior_page {
+	.layout-main {	 
+	  padding: 0 0 70px 0;  
+	}
+}

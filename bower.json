@@ -1,0 +1,26 @@
+{
+  "name": "html-tempate",
+  "version": "0.0.1",
+  "description": "Базовый шаблон для верстки сайтов ( Darvin Studio / BeOnTop )",
+  "homepage": "https://github.com/roflmanya/HTML-tempate.git",
+  "author": {
+    "name": "Andrey Kozlov",
+    "email": "roflmanya@gmail.com",
+    "url": "https://www.darvin-studio.ru/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roflmanya/HTML-tempate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roflmanya/HTML-tempate/issues"
+  },
+  "dependencies": {
+    "normalize-css": "^5.0.0",
+    "jquery": "1",
+    "animate.css": "^3.5.2",
+	"bxslider-4": "bxSlider#^4.2.5",
+  "owl.carousel": "^2.2.0"
+  }
+}
