@@ -1,0 +1,55 @@
+.catalogue {
+	&__tabs {
+		width: 100%;
+	}
+
+	&__tab {	
+		display: none;
+
+		&:checked + label {
+			 color: #008489;
+			 border-bottom: 2px solid #008489;
+
+		}
+
+		&#catalogue__tab1:checked~#catalogue__content-tab1,
+		&#catalogue__tab2:checked~#catalogue__content-tab2,
+		&#catalogue__tab3:checked~#catalogue__content-tab3,
+		&#catalogue__tab4:checked~#catalogue__content-tab4 {
+			display: block;
+		}
+	}
+		
+
+	.catalogue__tab-label {
+		display: inline-block;
+		margin: 0 24px 0 0;
+		font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+	    font-size: 12px;
+	    line-height: 16px;
+	    letter-spacing: 0.4px;
+	    padding: 12px 0;		   
+	    color: #484848;		   
+	    border-bottom: 2px solid transparent;
+	    cursor: pointer;		    
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    -webkit-transition-property: color;
+	    -moz-transition-property: color;
+	    transition-property: color;
+	    -webkit-transition-duration: 300ms;
+	    transition-duration: 300ms;
+	    -webkit-transition-timing-function: ease-out;
+	    transition-timing-function: ease-out;
+
+	    &:hover {
+	    	color: #008489;
+			 border-bottom: 2px solid #008489;
+	    }
+	}
+
+	&__content-tabs {
+		display: none;
+		padding: 20px 0;
+	}
+}

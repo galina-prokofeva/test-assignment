@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="format-detection" content="telephone=no">
 
-        <title>Главная</title>
+        <title>Отпускное жилье, дома, впечатления и места — Airbnb</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
 
-        <link rel="icon" href="favicon.png" type="image/png">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
         <!- bower:css ->
         <link rel="stylesheet" href="assets/vendor/normalize-css/normalize.css" />
         <link rel="stylesheet" href="assets/vendor/animate.css/animate.css" />
@@ -20,7 +20,37 @@
     </head>
     <body>
         <div class="layout-wrapper">
-            <main class="layout-main">        
+            <main class="layout-main"> 
+                <div class="catalogue -homepage">
+                    <div class="container">
+                        <div class="catalogue__tabs">
+                            <input id="catalogue__tab1" class="catalogue__tab" type="radio" name="catalogue__tabs" checked="checked">
+                            <label for="catalogue__tab1" class="catalogue__tab-label" title="Для вас">Для вас</label>
+
+                            <input id="catalogue__tab2" class="catalogue__tab" type="radio" name="catalogue__tabs">
+                            <label for="catalogue__tab2" class="catalogue__tab-label" title="Жилье">Жилье</label>
+                         
+                            <input id="catalogue__tab3" class="catalogue__tab" type="radio" name="catalogue__tabs">
+                            <label for="catalogue__tab3" class="catalogue__tab-label" title="Впечатления">Впечатления</label>
+                         
+                            <input id="catalogue__tab4" class="catalogue__tab" type="radio" name="catalogue__tabs">
+                            <label for="catalogue__tab4" class="catalogue__tab-label" title="Места">Места</label>
+                         
+                            <section class="catalogue__content-tabs" id="catalogue__content-tab1"> 
+                                <h2>Для вас</h2>                           
+                            </section>  
+                            <section class="catalogue__content-tabs" id="catalogue__content-tab2"> 
+                                <h2>Жилье</h2>                            
+                            </section> 
+                            <section class="catalogue__content-tabs" id="catalogue__content-tab3">
+                                <h2>Впечатления</h2>                             
+                            </section> 
+                            <section class="catalogue__content-tabs" id="catalogue__content-tab4">  
+                                <h2>Места</h2>                           
+                            </section>    
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>   
          
