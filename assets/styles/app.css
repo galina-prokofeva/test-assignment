@@ -207,7 +207,7 @@ ul, ol {
 .catalogue__item-name {
     margin: 7px 0;
     line-height: 18px;
-    max-height: 36px;
+    max-height: 37px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -296,9 +296,10 @@ ul, ol {
     bottom: 0;
     box-sizing: border-box;
     padding: 10px 5px;
+    pointer-events: none;
 }
 
-.catalogue .caption-tag a {
+.catalogue .caption-tag {
     font-size: 12px;
     line-height: 16px;
     color: #484848;
@@ -308,24 +309,49 @@ ul, ol {
     border-radius: 3px;
     background: #fff;
     margin: 0 0 5px 0;
-    width: auto;
-    height: auto;
-    text-decoration: none;
     font-weight: 900;
 }
 
-.catalogue .caption-heading a {
+.catalogue .caption-heading {
     font-size: 21px;
     font-weight: 900;
     line-height: 21px;
     color: #fff;
     text-shadow: 0px 0.5px, 0.5px 0px, 0.5px 0.5px;
-    display: inline-block;
-    vertical-align: top;
+    display: block;
     text-transform: uppercase;
-    width: auto;
-    height: auto;
-    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .catalogue__items {
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        word-wrap: normal;
+    }
+
+    .catalogue__item {
+        width: 48%;
+    }
+
+    .catalogue__item.-square {
+        width: 48%;
+    }
+
+    .catalogue__item-image {
+        max-height: 498px;
+    }
+
+    .catalogue__item-author {
+        white-space: normal;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .catalogue__tab-label {
+        margin-right: 10px;
+    }
 }
 
 /********************************************************************************************/
